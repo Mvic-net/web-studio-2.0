@@ -127,10 +127,24 @@ color:black;
     letter-spacing: 0.02em;
     color:var(--description-color);
 }
+
+.header-contact-icon{
+    margin-right: 10px;
+
+    fill: var(--description-color);
+}
+
+
 .header-contact:hover,
 .header-contact:focus{
     color:var(--acceent-color);
 }
+
+.header-contact:hover .header-contact-icon,
+.header-contact:focus .header-contact-icon{
+    fill:var(--acceent-color);
+}
+
 
 .header-container{
     display: flex;
@@ -147,10 +161,19 @@ color:black;
 
 /* hero section start */
 .hero{
-    background-color: #2F303A;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
+
+    background-color: #2F303A;
+    background-image: linear-gradient(to right,rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/home/hero/hero-bg.jpeg) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .hero-title{
@@ -226,6 +249,23 @@ color: var(--light-text-color);
     color: var(--description-color);
 }
 
+.feature-wraper{
+    height: 120px;
+
+    margin-bottom: 30px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #F5F4FA;
+    border-radius: 4px;
+}
+
+.feature-icon{
+
+}
+
 /* examples section end */
 .examples{
     padding-bottom: 94px;
@@ -254,6 +294,8 @@ color: var(--light-text-color);
 .team{
     padding-top: 94px;
     padding-bottom: 94px;
+
+    background-color: #F5F4FA;
 }
 
 .team-title{
@@ -292,7 +334,7 @@ color: var(--light-text-color);
 }
 
 .team-position {
-    margin-bottom: 30px;
+    margin-bottom: 16px;
 
     font-family: var(--main-font);
     font-style: normal;
@@ -304,7 +346,108 @@ color: var(--light-text-color);
     color: var(--description-color);
 }
 
+/* Оформление иконок */
+
+.social-media{
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+    
+}
+
+
+.social-media-item:not(:last-child){
+    margin-right: 10px;
+
+    padding-bottom: 30px;
+    
+}
+
+.social-media-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+
+    border-radius: 50%;
+
+    background-color: var(--bg-color);
+}
+
+.social-media-link:hover,
+.social-media-link:focus{
+    background-color: var(--acceent-color);
+}
+
+.social-media-icon{
+    fill: #AFB1B8;
+}
+
+.social-media-link:hover .social-media-icon,
+.social-media-link:focus .social-media-icon{
+    fill: var(--bg-color);
+}
+
 /* team section end */
+
+
+/* clients section start */
+.clients{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.clients-title{
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    /* line-height: 42px; */
+    line-height: 117%;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: var(--dark-text-color);
+
+    margin-bottom: 50px;
+}
+
+.clients-list{
+    display: flex;
+    --items: 6;
+}
+
+.clients-list-item{
+    display: flex;
+
+    height: 92px;
+
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid #AFB1B8;
+
+}
+
+.clients-icon{
+    fill: #AFB1B8;
+}
+
+.clients-list-item:hover {
+    border: 1px solid #2196F3;
+
+}
+
+.clients-list-item:hover .clients-icon{
+    fill: #2196F3;
+
+}
+
+
+
+/* clients section end */
+
 
 /* portfolio start */
 .portfolio{
@@ -405,6 +548,12 @@ color: var(--light-text-color);
     background-color: #2F303A;
 }
 
+.footer-wrapper{
+    display: flex;
+    align-items: center;
+
+}
+
 
 .footer .logo-color{
 color: var(--light-text-color);
@@ -435,6 +584,32 @@ color: var(--light-text-color);
 
 .footer-list-item:not(:last-child){
     margin-bottom: 9px;
+}
+
+.footer-title{
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: var(--light-text-color);
+
+    margin-bottom: 10px;
+}
+
+.footer-contact-wrapper{
+    margin-right: 70px;
+}
+
+.footer-media{
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+.footer-media-link{
+    background-color: rgba(255, 255, 255, 0.1);;
 }
 /* footer end */
 
